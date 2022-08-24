@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>ورود به حساب کاربری</title>
+</head>
+<body>
+        <div class="container">
+            <img src="icons8-male-user-96.png">
+            <form action="#" method="post">
+                <br>
+                <input type="email" placeholder="ایمیل" name="email" autocomplete="on" autofocus aria-invalid="true" required>
+                <br>
+                <input type="password" placeholder="رمز عبور" name="رمز عبور" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title=" لطفا از حروف کوچک انگلیسی و اعداد استفاده کنید(فقط 8 کارکتر)" required >
+                <br>
+                <input type="submit" value="ورود به حساب کاربری">
+                <br>
+                <div class="registers">
+                    <p>
+                     ثبت نام نکردید؟!<a href="../Registration/Register.html" target="_blank"> همین حالا ثبت نام کن</a>  &#128521;
+                    </p>
+                </div>
+                <div class="forget-password">
+                    <a href="#">
+                        فراموشی رمز عبور
+                    </a>
+                </div>
+            </form>
+            
+        </div>
+</body>
+</html>

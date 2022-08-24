@@ -1,0 +1,32 @@
+
+.container{
+    border-width: 10px;
+    background: #1d1f20;
+    position: relative;
+    border-radius: 10px;
+    height: 100px;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: calc(-1 * 10px);
+    left: calc(-1 * 10px);
+    width: calc(100% + 10px * 2);
+    height: calc(100% + 10px * 2);
+    background: linear-gradient(60deg,#F79533,#F37055,#EF4E7B,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
+    border-radius: calc(2 * 10px);
+z-index: -1;
+    animation: animate 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 40%  0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
